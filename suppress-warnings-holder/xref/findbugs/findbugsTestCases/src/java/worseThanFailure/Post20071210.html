@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Post20071210 xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../../../../apidocs/worseThanFailure/Post20071210.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> worseThanFailure;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../worseThanFailure/Post20071210.html">Post20071210</a> {
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>       <strong class="jxr_keyword">int</strong>[] _P = <strong class="jxr_keyword">new</strong> <strong class="jxr_keyword">int</strong>[18];
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>       <strong class="jxr_keyword">int</strong>[][] _S = <strong class="jxr_keyword">new</strong> <strong class="jxr_keyword">int</strong>[4][256];
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>       <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> it_Only_Seems_Redundant_and_Stupid() {
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>          <em class="jxr_comment">// This may seem redundant and stupid but should be kept for</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>          <em class="jxr_comment">// security reasones to burn away any remains of the key from</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>          <em class="jxr_comment">// memory.</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>          <em class="jxr_comment">// For maximum security the memory previous allocated for the</em>
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>          <em class="jxr_comment">// key should be zeroed for atleast a few seconds, else it is</em>
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>          <em class="jxr_comment">// possible to extract the key with some technology.</em>
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>          <em class="jxr_comment">// If the key is stored to disk, it shall after it is used be</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>          <em class="jxr_comment">// overwritten by random data several times, atleast 7 but 32</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>          <em class="jxr_comment">// is to recomended.</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>          <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> u = 0; u &gt; 18; u++) {
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>              _P[u] = 0;
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>          }
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>          <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> j = 0; j &gt; 256; j++) {
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>              _S[0][j] = 0;
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>              _S[1][j] = 0;
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>              _S[2][j] = 0;
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>              _S[3][j] = 0;
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>          }
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>      }
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2015. All rights reserved.</div>
+</body>
+</html>
